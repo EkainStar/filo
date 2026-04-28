@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #f0ede8;
+    padding: 28px 16px;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fffdf9;
+    border: 0.5px solid #d4cfc7;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* PORTADA */
+  .cover {
+    background: #1c2b3a;
+    color: #e8e2d6;
+    padding: 48px 52px 40px;
+    position: relative;
+  }
+  .cover-tag {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #8fa8c0;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+  }
+  .cover h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #f5f0e8;
+    margin-bottom: 8px;
+  }
+  .cover-sub {
+    font-size: 13px;
+    color: #8fa8c0;
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+  .cover-divider {
+    width: 48px;
+    height: 2px;
+    background: #4a7a9b;
+    margin-bottom: 28px;
+  }
+  .cover-toc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 32px;
+    font-size: 11.5px;
+    color: #9db8cc;
+  }
+  .cover-toc span::before { content: '→ '; color: #4a7a9b; }
+
+  /* CONTENIDO */
+  .content { padding: 44px 52px 52px; }
+
+  /* SECCIÓN */
+  .section {
+    margin-bottom: 34px;
+    padding-bottom: 34px;
+    border-bottom: 0.5px solid #e0dbd3;
+  }
+  .section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+  .section-num {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #fff;
+    background: var(--accent);
+    padding: 3px 7px;
+    border-radius: 3px;
+    margin-top: 4px;
+    flex-shrink: 0;
+    font-family: Georgia, serif;
+  }
+  .section h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1c2b3a;
+    line-height: 1.3;
+  }
+  .era-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 5px;
+    font-family: Georgia, serif;
+  }
+  .section p {
+    color: #2e2e2e;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .section p b {
+    color: #1c2b3a;
+    font-weight: 600;
+  }
+
+  /* COLORES POR ERA */
+  .era-antigua    { --accent: #5a7a5a; }
+  .era-helenismo  { --accent: #7a6a4a; }
+  .era-medieval   { --accent: #6a5a7a; }
+  .era-moderna    { --accent: #4a6a8a; }
+  .era-moderna2   { --accent: #3a7070; }
+  .era-contemp    { --accent: #7a4a4a; }
+  .era-contemp2   { --accent: #5a4a7a; }
+
+  /* PIE */
+  .footer {
+    background: #f5f1ec;
+    border-top: 0.5px solid #e0dbd3;
+    padding: 14px 52px;
+    font-size: 10.5px;
+    color: #9a9490;
+    display: flex;
+    justify-content: space-between;
+    font-family: Georgia, serif;
+    letter-spacing: 0.3px;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .page { border: none; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="cover">
+    <div class="cover-tag">Filosofía · Resumen completo · Ekain Díez</div>
+    <h1>Historia del Pensamiento Filosófico</h1>
+    <div class="cover-sub">De la Grecia Antigua a la Posmodernidad</div>
+    <div class="cover-divider"></div>
+    <div class="cover-toc">
+      <span>Platón</span>
+      <span>Nietzsche y Marx</span>
+      <span>Aristóteles</span>
+      <span>Sigmund Freud</span>
+      <span>Escuelas helenísticas</span>
+      <span>Crítica del capitalismo</span>
+      <span>Filosofía medieval</span>
+      <span>Posmodernidad</span>
+      <span>Renacimiento</span>
+      <span>Existencialismo</span>
+      <span>Racionalismo y empirismo</span>
+      <span></span>
+      <span>Edad moderna</span>
+      <span></span>
+      <span>Kant y Joxe Azurmendi</span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- 1. PLATÓN -->
+    <div class="section era-antigua">
+      <div class="era-label">Grecia Antigua · s. IV a.C.</div>
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Platón</h2>
+      </div>
+      <p>Platón sostiene que la realidad se divide en dos mundos: el <b>mundo inteligible</b>, eterno e inmutable, donde residen las <b>Ideas</b> (arquetipos perfectos de todo lo existente), y el <b>mundo sensible</b>, compuesto de meras copias imperfectas. El conocimiento verdadero —la <b>episteme</b>— solo alcanza las Ideas; los sentidos, en cambio, nos ofrecen simple opinión (<b>doxa</b>). El <b>mito de la caverna</b> ilustra este dualismo: los prisioneros confunden sombras con la realidad, igual que el ser humano confunde lo material con la verdad. El alma, inmortal y preexistente, conoció las Ideas antes de caer en el cuerpo; aprender es <b>anámnesis</b>, es decir, recordar. Éticamente, quien recuerda la <b>Idea del Bien</b> no puede obrar mal: el conocimiento y la virtud son inseparables. Solo el rey filósofo —quien ha contemplado la Idea del Bien— está capacitado para gobernar.</p>
+    </div>
+
+    <!-- 2. ARISTÓTELES -->
+    <div class="section era-antigua">
+      <div class="era-label">Grecia Antigua · s. IV a.C.</div>
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Aristóteles</h2>
+      </div>
+      <p>Aristóteles rechaza el dualismo platónico: la forma no existe separada de la materia, sino unida a ella en un único mundo real. Esta doctrina, el <b>hilemorfismo</b>, explica el cambio como el paso de la <b>potencia</b> (lo que algo puede llegar a ser) al <b>acto</b> (lo que es). Toda la cadena causal remonta a un primer motor que no fue movido por nada: el <b>motor inmóvil</b>. El alma, para Aristóteles, es la forma del cuerpo —no preexiste ni sobrevive— y tiene tres funciones: <b>vegetativa</b>, <b>sensitiva</b> y <b>racional</b>. En ética, la felicidad (<b>eudaimonía</b>) es el fin de toda acción humana y se logra ejerciendo la razón con <b>virtud</b>: ni el exceso ni el defecto, sino el <b>término medio</b>. En política, analiza más de 150 constituciones y concluye que el buen gobierno busca el bien común (<b>monarquía, aristocracia, politeia</b>), mientras el corrupto persigue el interés propio (<b>tiranía, oligarquía, demagogia</b>).</p>
+    </div>
+
+    <!-- 3. ESCUELAS HELENÍSTICAS -->
+    <div class="section era-helenismo">
+      <div class="era-label">Época Helenística · ss. III–I a.C.</div>
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Escuelas helenísticas</h2>
+      </div>
+      <p>Tras la muerte de Alejandro Magno y la decadencia de Atenas, la filosofía se convierte en un <b>fármaco</b> para el alma: todas estas escuelas comparten el objetivo de alcanzar la <b>ataraxia</b> (serenidad e imperturbabilidad). Los <b>estoicos</b> (Zenón, Séneca) enseñan que no podemos controlar lo externo, pero sí nuestra respuesta: <b>domínate y aguanta</b>. Los <b>epicúreos</b> buscan la felicidad a través del placer moderado y natural, distinguiendo entre placeres necesarios, innecesarios e inútiles; su <b>tetrafármaco</b> propone no temer a los dioses ni a la muerte. Los <b>cínicos</b> (Diógenes) radicalizan este rechazo: toda convención social es artificial, y la felicidad se halla en vivir como los animales, sin posesiones. Los <b>escépticos</b> (Pirrón, Sexto Empírico) proponen la <b>epoché</b> —suspensión del juicio— ante la imposibilidad de conocer la verdad absoluta.</p>
+    </div>
+
+    <!-- 4. FILOSOFÍA MEDIEVAL -->
+    <div class="section era-medieval">
+      <div class="era-label">Edad Media · ss. I–XV</div>
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Filosofía medieval</h2>
+      </div>
+      <p>La filosofía medieval gira en torno a Dios y se articula en dos grandes etapas. La <b>Patrística</b> (ss. I–VIII), representada por <b>San Agustín de Hipona</b>, parte de Platón: las <b>ideas ejemplares</b> son pensamientos de Dios implantados en nosotros, y alcanzar la verdad requiere <b>iluminación divina</b>. La razón sirve a la fe: <i>credo ut intelligam</i>. La <b>Escolástica</b> (ss. IX–XV), dominada por <b>Santo Tomás de Aquino</b>, parte de Aristóteles y propone cinco vías racionales para demostrar la existencia de Dios (movimiento, causalidad, contingencia, perfección, finalidad). <b>Guillermo de Ockham</b> rompe con la tradición al defender el <b>nominalismo</b>: los universales son solo nombres, la realidad es puramente singular, y la existencia de Dios no puede probarse con la razón —es pura fe. Su <b>navaja</b> (la explicación más simple es la más probable) anticipa el pensamiento moderno.</p>
+    </div>
+
+    <!-- 5. RENACIMIENTO -->
+    <div class="section era-medieval">
+      <div class="era-label">ss. XV–XVI</div>
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2>Renacimiento y humanismo</h2>
+      </div>
+      <p>El Renacimiento supone el tránsito del <b>paradigma hermenéutico</b> —la verdad reside en los textos sagrados— al <b>paradigma mecanicista</b>: la realidad puede conocerse observándola e interpretando sus leyes. Este giro es también el paso del método <b>deductivo</b> al <b>inductivo</b>. La caída de Constantinopla, el descubrimiento de América y la imprenta aceleran el cambio cultural. El <b>humanismo</b> coloca al ser humano en el centro del saber, recuperando los clásicos con mirada científica. <b>Copérnico y Galileo</b> desplazan la Tierra del centro del universo. <b>Martín Lutero</b> critica la corrupción eclesial e inicia la Reforma. <b>Maquiavelo</b>, en <i>El Príncipe</i>, separa la moral de la política. Aparecen las primeras <b>utopías políticas</b> (Tomás Moro, Campanella) que imaginan sociedades sin propiedad privada y con jornadas laborales cortas.</p>
+    </div>
+
+    <!-- 6. RACIONALISMO Y EMPIRISMO -->
+    <div class="section era-moderna">
+      <div class="era-label">Filosofía Moderna · s. XVII</div>
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2>Racionalismo y empirismo</h2>
+      </div>
+      <p><b>René Descartes</b> (racionalismo) aplica la <b>duda metódica</b> hasta dar con una certeza indubitable: <i>cogito, ergo sum</i>. A partir de ahí, reconoce <b>ideas innatas</b> (perfectas, como Dios o la lógica) que los sentidos no pueden proporcionar; su existencia prueba la de un ser superior que las garantiza. Descartes divide la realidad en <b>res cogitans</b> (mente), <b>res extensa</b> (materia) y <b>res infinita</b> (Dios). Frente a él, los empiristas sostienen que nacemos como una <b>tabula rasa</b>. <b>John Locke</b> diferencia ideas simples (percibidas directamente) y complejas (elaboradas por la mente). <b>David Hume</b>, el más radical, distingue <b>impresiones</b> (percepciones vivas) e <b>ideas</b> (huellas que dejan), y concluye que el futuro es incognoscible: solo lo empírico es real, lo que le lleva al ateísmo y al escepticismo sobre la causalidad.</p>
+    </div>
+
+    <!-- 7. EDAD MODERNA -->
+    <div class="section era-moderna">
+      <div class="era-label">ss. XVII–XVIII</div>
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2>Edad moderna: política, capitalismo e Ilustración</h2>
+      </div>
+      <p>La modernidad reemplaza la teocracia por el <b>contrato social</b>: el pueblo legitima al gobernante. <b>Hobbes</b> ve al ser humano como naturalmente egoísta y violento (<i>homo homini lupus</i>); solo un <b>soberano absoluto</b> (el Leviatán) garantiza el orden. <b>Rousseau</b> invierte el argumento: el ser humano es bueno por naturaleza; la <b>propiedad privada</b> y la civilización lo corrompen. <b>Locke</b>, padre del liberalismo, afirma que todos nacemos con derechos inalienables —<b>vida, libertad y propiedad</b>— y el gobernante que no los respete puede ser destituido. El <b>capitalismo</b> se asienta sobre estos principios: propiedad privada, mercado y trabajo asalariado. <b>Bentham</b> propone el utilitarismo (la mayor felicidad para el mayor número); <b>Stuart Mill</b> lo matiza distinguiendo placeres superiores. La <b>Ilustración</b> (s. XVIII) hace de la <b>razón</b> la única guía válida: racionalismo crítico, autonomía, tolerancia, deísmo y derechos universales. Desemboca en la <b>Revolución Francesa</b>.</p>
+    </div>
+
+    <!-- 8. KANT -->
+    <div class="section era-moderna2">
+      <div class="era-label">s. XVIII–XIX</div>
+      <div class="section-header">
+        <span class="section-num">08</span>
+        <h2>Kant y Joxe Azurmendi</h2>
+      </div>
+      <p><b>Kant</b> opera una <b>revolución copernicana</b> en la filosofía: no conocemos la realidad tal como es, sino tal como somos capaces de percibirla. La razón estructura la experiencia, pero sus límites son insuperables —la metafísica es imposible como ciencia, aunque inevitable como tendencia humana. En ética, rechaza los <b>imperativos hipotéticos</b> (actuar por miedo o recompensa) y propone el <b>imperativo categórico</b>: actúa solo según aquella máxima que puedas querer que se convierta en ley universal. Las personas son siempre <b>fines, nunca medios</b>. <b>Joxe Azurmendi</b>, filósofo vasco contemporáneo, critica el absolutismo kantiano: la ética es demasiado compleja para un único principio universal. Propone un <b>relativismo relativo</b> —ni subjetivismo ni nihilismo— basado en la reflexión individual (<b>voz interior</b>) y el diálogo colectivo (<b>debate público</b>). La ética siempre debe contextualizarse.</p>
+    </div>
+
+    <!-- 9. NIETZSCHE Y MARX -->
+    <div class="section era-contemp">
+      <div class="era-label">s. XIX · Maestros de la sospecha</div>
+      <div class="section-header">
+        <span class="section-num">09</span>
+        <h2>Nietzsche y Marx</h2>
+      </div>
+      <p><b>Nietzsche</b> diagnostica una <b>decadencia moral</b> en Occidente: el cristianismo ha impuesto valores que niegan la vida. Proclama la <b>muerte de Dios</b> —la moral cristiana pierde su fundamento— y propone una <b>transmutación de valores</b> que atraviesa tres etapas: el <b>camello</b> (obediencia), el <b>león</b> (rebelión) y el <b>niño</b> (creación). El <b>superhombre</b> es quien acepta el nihilismo y crea su propia moral; el <b>eterno retorno</b> exige vivir de tal modo que se desee repetir cada instante eternamente. <b>Karl Marx</b> pone el foco en lo material: el ser humano se realiza a través del trabajo, pero el capitalismo lo <b>aliena</b>, convirtiéndolo en una pieza de la máquina. El <b>materialismo histórico</b> lee la historia como una <b>lucha de clases</b> entre quienes poseen los medios de producción y quienes se ven obligados a trabajar para ellos. La <b>plusvalía</b> —la diferencia entre lo producido y lo cobrado— es la injusticia estructural del sistema; solo la revolución proletaria puede superarla.</p>
+    </div>
+
+    <!-- 10. FREUD -->
+    <div class="section era-contemp">
+      <div class="era-label">ss. XIX–XX</div>
+      <div class="section-header">
+        <span class="section-num">10</span>
+        <h2>Sigmund Freud</h2>
+      </div>
+      <p><b>Freud</b> revoluciona la comprensión del ser humano al demostrar que no somos dueños de nuestra mente consciente. El <b>aparato psíquico</b> se divide en tres instancias: el <b>ello</b> (impulsos animales e instintivos), el <b>superyó</b> (la moral interiorizada, de origen paterno) y el <b>yo</b> (la parte consciente que media entre ambos). El conflicto entre ello y superyó genera <b>traumas</b> que quedan reprimidos en el <b>inconsciente</b>; aunque no los recordemos, nos constituyen. La <b>histeria</b> y otros síntomas son manifestaciones de contenidos reprimidos. El <b>complejo de Edipo</b> —pulsión hacia la figura parental del sexo contrario y rivalidad con la del mismo sexo— es el trauma primordial e irresuelto. Para sacar a la luz el inconsciente, Freud desarrolla la <b>hipnosis</b> y la <b>interpretación de los sueños</b>. Su tesis central: <i>no sabemos realmente cómo somos</i>.</p>
+    </div>
+
+    <!-- 11. CRÍTICA DEL CAPITALISMO / ESCUELA DE FRANKFURT -->
+    <div class="section era-contemp2">
+      <div class="era-label">ss. XX · Teoría crítica</div>
+      <div class="section-header">
+        <span class="section-num">11</span>
+        <h2>La crítica del capitalismo: Escuela de Frankfurt, Rawls, Popper, Habermas y Arendt</h2>
+      </div>
+      <p>La <b>Escuela de Frankfurt</b> (Adorno, Horkheimer, Marcuse…) critica que la Ilustración derivó en <b>razón instrumental</b>: la razón al servicio del dominio y del cálculo, no de la emancipación. El Holocausto es su ejemplo límite. <b>John Rawls</b> propone el <b>velo de la ignorancia</b>: si diseñáramos la sociedad sin saber qué posición ocuparíamos en ella, garantizaríamos mínimos de justicia para todos. <b>Karl Popper</b> advierte del peligro de cualquier ideología que pretenda conocer el «fin de la historia»: el totalitarismo nace cuando se impone un modelo de sociedad perfecta. Defiende la <b>democracia liberal</b> y el Estado de Derecho con intervención puntual. <b>Habermas</b> añade que sin ciudadanos bien informados la democracia es teatro: el Estado debe garantizar un <b>pluralismo comunicativo</b> y proteger la <b>racionalidad dialógica</b>. <b>Hannah Arendt</b> analiza el <b>totalitarismo</b> como una máquina que transforma a los ciudadanos en masas anónimas mediante propaganda, terror permanente y culto al líder. <b>Simone de Beauvoir</b> une existencialismo y feminismo: <i>la mujer no nace, se hace</i>; su papel subordinado es una construcción histórica, no un hecho natural.</p>
+    </div>
+
+    <!-- 12. POSMODERNIDAD -->
+    <div class="section era-contemp2">
+      <div class="era-label">s. XX–XXI</div>
+      <div class="section-header">
+        <span class="section-num">12</span>
+        <h2>Posmodernidad</h2>
+      </div>
+      <p>La posmodernidad hereda de Nietzsche la desconfianza ante toda verdad absoluta y declara el fin de los <b>metarrelatos</b>: las grandes ideologías modernas (nazismo, comunismo, fe ciega en el progreso) desembocaron en catástrofes. <b>Jean-François Lyotard</b> sostiene que la verdad es una construcción histórica y cultural; no hay un único relato válido para toda la humanidad, sino una <b>pluralidad de identidades y discursos</b>. La modernidad es un proyecto fracasado. Sin embargo, <b>Habermas</b> responde que abandonar todo criterio de verdad conduce al relativismo absoluto: sin fundamentos racionales no podemos defender la democracia frente al fascismo. Propone la <b>racionalidad comunicativa</b>: la verdad existe cuando se construye colectivamente mediante un <b>diálogo libre y racional</b>. Para Habermas, la modernidad no ha fracasado; es un <b>proyecto inacabado</b> que merece ser continuado.</p>
+    </div>
+
+    <!-- 13. EXISTENCIALISMO -->
+    <div class="section era-contemp">
+      <div class="era-label">ss. XX · Corriente filosófica</div>
+      <div class="section-header">
+        <span class="section-num">13</span>
+        <h2>Existencialismo</h2>
+      </div>
+      <p>El existencialismo surge tras la Segunda Guerra Mundial como respuesta a la crisis de sentido. Su tesis central: <b>la existencia precede a la esencia</b>. <b>Sartre</b> distingue el <b>ser-en-sí</b> (objetos) del <b>ser-para-sí</b> (el ser humano consciente de su existencia); estamos <b>condenados a ser libres</b>, lo que genera angustia, pero también responsabilidad absoluta. Vivir sin ejercer esa libertad es vivir de forma <b>inauténtica</b>. <b>Heidegger</b> llama <b>Dasein</b> al ser humano: una existencia arrojada al mundo, siempre proyecto, siempre orientada hacia la muerte. Quien ignora esto vive como <i>das Man</i>, el hombre anónimo de la masa. <b>Ortega y Gasset</b> propone el <b>raciovitalismo</b> y el <b>perspectivismo</b>: <i>yo soy yo y mis circunstancias</i>; sin contexto no hay conocimiento. <b>María Zambrano</b> integra poesía y filosofía: la realidad también está hecha de sufrimiento y sentimiento. <b>Unamuno</b> vive la tensión irresuelble entre razón (que niega la inmortalidad) y deseo (que la anhela): el <b>sentimiento trágico de la vida</b>.</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span>Historia del Pensamiento Filosófico — Resumen completo</span>
+    <span>De los presocráticos a la posmodernidad</span>
+  </div>
+
+</div>
+</body>
+</html>
